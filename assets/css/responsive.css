@@ -1,0 +1,940 @@
+@media (min-width: 48rem) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+
+  .intro-grid,
+  .opportunity-grid,
+  .principal-message__grid,
+  .about-hero__grid,
+  .about-intro__grid,
+  .about-story__grid,
+  .about-leadership__grid,
+  .teachers-hero__grid,
+  .admissions-hero__grid,
+  .admissions-split,
+  .admissions-visit__grid,
+  .contact-hero__grid,
+  .contact-form-layout,
+  .contact-location-grid,
+  .contact-visit-grid,
+  .contact-social-grid,
+  .two-column-layout,
+  .content-sidebar-layout {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
+  }
+
+  .about-hero__grid,
+  .about-intro__grid,
+  .about-leadership__grid,
+  .teachers-hero__grid {
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+  }
+
+  .about-story__grid {
+    grid-template-columns: 0.95fr 1.05fr;
+  }
+
+  .admissions-hero__grid {
+    grid-template-columns: 0.45fr 0.55fr;
+    align-items: center;
+  }
+
+  .admissions-split,
+  .admissions-visit__grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+  }
+
+  .contact-hero__grid {
+    grid-template-columns: 0.45fr 0.55fr;
+    align-items: center;
+  }
+
+  .contact-form-layout,
+  .contact-location-grid,
+  .contact-visit-grid,
+  .contact-social-grid,
+  .blog-featured,
+  .blog-newsletter,
+  .single-hero__grid,
+  .single-newsletter {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .blog-content-layout {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+  }
+
+  .single-layout {
+    grid-template-columns: minmax(0, 780px) minmax(18rem, 1fr);
+  }
+
+  .single-sidebar {
+    position: sticky;
+    top: 9.5rem;
+  }
+
+  .single-gallery,
+  .single-info-grid,
+  .single-download-grid,
+  .single-related-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .single-post-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .single-author-box {
+    grid-template-columns: auto 1fr;
+  }
+
+  .content-sidebar-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .card-grid--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .card-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-image-card-grid,
+  .about-benefits-grid,
+  .about-gallery-grid,
+  .admissions-card-grid,
+  .admissions-date-grid,
+  .admissions-pricing-grid,
+  .contact-directory-grid,
+  .contact-help-grid,
+  .blog-event-grid,
+  .blog-success-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .blog-article-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-info-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .teachers-highlights {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .blog-category-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .admissions-scholarship-grid,
+  .admissions-testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__grid {
+    grid-template-columns: minmax(14rem, 1fr) minmax(22rem, 1.6fr) minmax(10rem, 0.8fr) minmax(10rem, 0.8fr);
+  }
+
+  .teacher-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1025px) {
+  body.has-mobile-menu {
+    overflow: hidden;
+  }
+
+  .site-header {
+    z-index: 50;
+  }
+
+  .site-header::after {
+    position: fixed;
+    inset: 0;
+    z-index: 998;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.62);
+    backdrop-filter: blur(1.5px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms ease, visibility 220ms ease;
+    content: "";
+  }
+
+  body.has-mobile-menu .site-header::after {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .site-header__inner {
+    flex-wrap: nowrap;
+  }
+
+  .site-header__actions {
+    display: none;
+  }
+
+  .site-header__menu-toggle {
+    position: relative;
+    z-index: 1002;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-left: auto;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    background: var(--color-background);
+    color: var(--color-heading);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-base);
+  }
+
+  .site-header__menu-icon,
+  .site-header__menu-icon::before,
+  .site-header__menu-icon::after {
+    width: 1.5rem;
+    height: 2px;
+    background: currentColor;
+  }
+
+  .site-header__menu-icon {
+    position: relative;
+  }
+
+  body.has-mobile-menu .site-header__menu-toggle {
+    position: fixed;
+    top: 0.75rem;
+    left: min(24.75rem, calc(84vw - 4.65rem));
+    width: 4rem;
+    height: 4rem;
+    border: 0.35rem solid rgba(255, 255, 255, 0.12);
+    background: var(--color-secondary);
+    color: var(--color-heading);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.22);
+  }
+
+  body.has-mobile-menu .site-header__menu-icon {
+    background: transparent;
+  }
+
+  body.has-mobile-menu .site-header__menu-icon::before,
+  body.has-mobile-menu .site-header__menu-icon::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+  }
+
+  body.has-mobile-menu .site-header__menu-icon::before {
+    transform: rotate(45deg);
+  }
+
+  body.has-mobile-menu .site-header__menu-icon::after {
+    transform: rotate(-45deg);
+  }
+
+  body.has-mobile-menu .site-header__branding {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1002;
+    gap: 0.65rem;
+    color: var(--color-background);
+  }
+
+  body.has-mobile-menu .site-header__logo {
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 0.25rem solid var(--color-background);
+    background: var(--color-background);
+    object-fit: contain;
+  }
+
+  body.has-mobile-menu .site-header__name {
+    max-width: 14rem;
+    color: var(--color-background);
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .primary-navigation {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1000;
+    display: block;
+    width: min(30rem, 84vw);
+    height: 100dvh;
+    padding: 7.1rem 2.6rem 2rem;
+    overflow-y: auto;
+    background: #281346;
+    box-shadow: 1.5rem 0 3rem rgba(16, 8, 32, 0.24);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-102%);
+    transition: transform 260ms ease, opacity 220ms ease, visibility 220ms ease;
+  }
+
+  .primary-navigation.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .primary-navigation__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.15rem;
+    padding: 0;
+  }
+
+  .primary-navigation a {
+    padding: 0.15rem 0;
+    color: var(--color-background);
+    font-size: clamp(1.45rem, 4vw, 1.75rem);
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .primary-navigation a:hover,
+  .primary-navigation a:focus-visible,
+  .primary-navigation a[aria-current="page"] {
+    color: var(--color-secondary);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .hero__stage {
+    min-height: 720px;
+    background:
+      linear-gradient(180deg, rgba(36, 17, 62, 0.28) 0%, rgba(36, 17, 62, 0.18) 52%, rgba(36, 17, 62, 0.08)),
+      url("../images/hero-kids-center.jpg") center / cover no-repeat;
+  }
+
+  .hero__portrait {
+    right: 2rem;
+    top: 6rem;
+    bottom: auto;
+    width: 14rem;
+  }
+
+  .hero-note {
+    max-width: 21rem;
+  }
+
+  .hero-metrics {
+    right: 1.5rem;
+    left: 1.5rem;
+    transform: none;
+    width: auto;
+  }
+
+  .program-band__panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-hero__media {
+    min-height: 28rem;
+  }
+
+  .teachers-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero__media img {
+    height: 22rem;
+  }
+
+  .about-hero__media img:last-child {
+    height: 14rem;
+  }
+
+  .about-image-card-grid,
+  .about-benefits-grid,
+  .about-gallery-grid,
+  .admissions-card-grid,
+  .admissions-date-grid,
+  .admissions-scholarship-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admissions-hero__grid,
+  .admissions-split,
+  .admissions-visit__grid,
+  .contact-hero__grid,
+  .contact-form-layout,
+  .contact-location-grid,
+  .contact-visit-grid,
+  .contact-social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admissions-timeline {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .blog-filter-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .single-hero__grid,
+  .single-layout,
+  .single-newsletter {
+    grid-template-columns: 1fr;
+  }
+
+  .single-sidebar {
+    position: static;
+  }
+
+  .single-gallery,
+  .single-info-grid,
+  .single-download-grid,
+  .single-related-grid,
+  .single-author-box,
+  .single-post-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blog-view-toggle {
+    width: max-content;
+  }
+
+  .admissions-timeline article::before {
+    left: 0;
+    width: 100%;
+  }
+
+  .admissions-timeline article:nth-child(3n + 1)::before {
+    left: 50%;
+    width: 50%;
+  }
+
+  .admissions-timeline article:nth-child(3n)::before {
+    width: 50%;
+  }
+
+  .admissions-pricing-grid,
+  .admissions-testimonial-grid,
+  .contact-info-grid,
+  .contact-directory-grid,
+  .contact-help-grid,
+  .blog-article-grid,
+  .blog-event-grid,
+  .blog-success-grid,
+  .blog-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-emergency-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-aside {
+    position: relative;
+    top: auto;
+  }
+
+  .solution-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ask-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-section h2 {
+    max-width: 15ch;
+  }
+
+  .solution-section__media {
+    min-height: 30rem;
+  }
+
+  .opportunity-collage {
+    min-height: 480px;
+  }
+
+  .opportunity-collage__large {
+    width: min(82%, 34rem);
+    height: 28rem;
+  }
+
+  .opportunity-collage__small {
+    left: 8%;
+  }
+
+  .experience-badge {
+    top: 5.5rem;
+    right: 4%;
+  }
+
+  .program-preview-grid {
+    gap: var(--space-3);
+  }
+
+  .teacher-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .site-footer__newsletter {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  .announcement-bar__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding: 0.7rem 0;
+  }
+
+  .announcement-bar p {
+    font-size: 0.8125rem;
+    line-height: 1.35;
+  }
+
+  .announcement-bar a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__actions,
+  .admissions-callout__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero--home {
+    padding-top: var(--space-2);
+  }
+
+  .hero__stage {
+    min-height: auto;
+    padding-bottom: var(--space-3);
+    border-radius: 1rem;
+  }
+
+  .hero--home .hero__content {
+    padding: var(--space-4) var(--space-3) var(--space-3);
+    margin: var(--space-3);
+  }
+
+  .hero--home .hero__content::after {
+    display: none;
+  }
+
+  .hero--home .hero__title {
+    max-width: 10ch;
+  }
+
+  .hero__portrait,
+  .hero-note,
+  .hero-metrics {
+    position: relative;
+    inset: auto;
+    width: auto;
+    margin: 0 var(--space-3) var(--space-2);
+  }
+
+  .hero__portrait {
+    width: min(72vw, 18rem);
+    justify-self: center;
+  }
+
+  .hero-note {
+    max-width: none;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
+    transform: none;
+  }
+
+  .hero-metrics article + article {
+    border-top: 1px solid var(--color-border);
+    border-left: 0;
+  }
+
+  .program-preview-grid,
+  .program-band__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero__content h1 {
+    max-width: 13ch;
+  }
+
+  .teachers-hero__content h1 {
+    max-width: 13ch;
+  }
+
+  .teachers-hero__image img {
+    min-height: 22rem;
+  }
+
+  .teachers-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .teachers-final-cta {
+    align-items: flex-start;
+  }
+
+  .about-hero__media {
+    min-height: auto;
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .about-hero__media img,
+  .about-hero__media img:first-child,
+  .about-hero__media img:last-child {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 22rem;
+  }
+
+  .about-intro__image img {
+    min-height: 22rem;
+  }
+
+  .about-image-card-grid,
+  .about-benefits-grid,
+  .about-gallery-grid,
+  .admissions-card-grid,
+  .admissions-date-grid,
+  .admissions-pricing-grid,
+  .admissions-scholarship-grid,
+  .admissions-testimonial-grid,
+  .contact-info-grid,
+  .contact-directory-grid,
+  .contact-help-grid,
+  .blog-article-grid,
+  .blog-event-grid,
+  .blog-success-grid,
+  .blog-category-grid,
+  .blog-content-layout,
+  .blog-featured,
+  .blog-newsletter,
+  .single-hero__grid,
+  .single-layout,
+  .single-newsletter,
+  .single-gallery,
+  .single-info-grid,
+  .single-download-grid,
+  .single-related-grid,
+  .single-author-box,
+  .single-post-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .single-hero__image img {
+    min-height: 22rem;
+  }
+
+  .single-progress {
+    position: static;
+  }
+
+  .single-progress__inner {
+    flex-wrap: wrap;
+    padding-block: var(--space-2);
+  }
+
+  .single-progress__inner > span {
+    flex-basis: 100%;
+  }
+
+  .single-newsletter form {
+    grid-template-columns: 1fr;
+  }
+
+  .comment-form {
+    grid-template-columns: 1fr;
+  }
+
+  .single-final-cta {
+    align-items: flex-start;
+  }
+
+  .blog-hero__content {
+    min-height: 24rem;
+  }
+
+  .blog-filter-section {
+    position: static;
+  }
+
+  .blog-filter-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-view-toggle,
+  .blog-view-toggle button {
+    width: 100%;
+  }
+
+  .blog-featured img {
+    min-height: 20rem;
+  }
+
+  .blog-newsletter form {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-final-cta {
+    align-items: flex-start;
+  }
+
+  .contact-hero h1 {
+    max-width: 12ch;
+  }
+
+  .contact-hero__visual img {
+    min-height: auto;
+  }
+
+  .contact-floating-card {
+    position: static;
+    margin-top: var(--space-2);
+  }
+
+  .contact-map {
+    min-height: 22rem;
+  }
+
+  .contact-visit-image img {
+    min-height: 22rem;
+  }
+
+  .contact-social-grid {
+    text-align: center;
+  }
+
+  .contact-social-list {
+    justify-content: center;
+  }
+
+  .contact-emergency-banner,
+  .contact-final-cta {
+    align-items: flex-start;
+  }
+
+  .admissions-hero h1 {
+    max-width: 13ch;
+  }
+
+  .admissions-hero__visual,
+  .admissions-hero__visual img {
+    min-height: auto;
+  }
+
+  .admissions-hero__visual img {
+    height: auto;
+  }
+
+  .admissions-floating-card {
+    position: static;
+    margin-top: var(--space-2);
+  }
+
+  .admissions-timeline {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .admissions-timeline article {
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .admissions-timeline article::before {
+    display: none;
+  }
+
+  .admissions-timeline article h3,
+  .admissions-timeline article p {
+    grid-column: 2;
+  }
+
+  .admissions-timeline span {
+    grid-row: 1 / span 2;
+  }
+
+  .admissions-price-card--featured {
+    transform: none;
+  }
+
+  .admissions-visit__image img {
+    min-height: 22rem;
+  }
+
+  .admissions-testimonial-grid article {
+    grid-template-columns: 1fr;
+  }
+
+  .admissions-testimonial-grid img {
+    width: 100%;
+    height: 14rem;
+  }
+
+  .admissions-final-cta {
+    align-items: flex-start;
+  }
+
+  .about-story__images img,
+  .about-image-card img,
+  .about-gallery-grid img {
+    height: 16rem;
+  }
+
+  .about-final-cta {
+    align-items: flex-start;
+  }
+
+  .facility-item {
+    grid-template-columns: 3.25rem 1fr;
+  }
+
+  .facility-item__icon {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .solution-section__actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .solution-section__media {
+    min-height: 22rem;
+  }
+
+  .ask-section__media {
+    min-height: 24rem;
+  }
+
+  .ask-accordion summary {
+    padding-left: var(--space-2);
+  }
+
+  .teacher-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-card__media,
+  .teacher-card__media img {
+    height: 18rem;
+    min-height: 18rem;
+  }
+
+  .gallery-grid {
+    grid-auto-rows: 20rem;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card--wide {
+    grid-column: auto;
+  }
+
+  .gallery-modal {
+    padding: var(--space-2);
+  }
+
+  .gallery-modal__caption {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .opportunity-collage {
+    min-height: 430px;
+  }
+
+  .opportunity-collage__small {
+    left: 0;
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .opportunity-collage__large {
+    right: 0;
+    width: 86%;
+    height: 25rem;
+  }
+
+  .experience-badge {
+    top: 4.5rem;
+    right: 0.75rem;
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .experience-badge strong {
+    font-size: 1.45rem;
+  }
+
+  .experience-badge span {
+    max-width: 4.25rem;
+    font-size: 0.72rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .site-footer__newsletter {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .site-footer__form input,
+  .site-footer__form button {
+    min-height: 4rem;
+  }
+
+  .site-footer__bottom {
+    justify-content: flex-start;
+    padding-right: 3rem;
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+}

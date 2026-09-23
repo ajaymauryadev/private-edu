@@ -1,0 +1,294 @@
+.teacher-details {
+  background: var(--color-background);
+}
+
+.teacher-details :focus-visible {
+  outline: 3px solid rgba(123, 63, 200, 0.28);
+  outline-offset: 3px;
+}
+
+.teacher-details .teacher-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(3rem, 6vw, 5.5rem) 0 0 0;
+  background:
+    radial-gradient(circle at 10% 18%, rgba(245, 158, 11, 0.16), transparent 14rem),
+    radial-gradient(circle at 88% 12%, rgba(123, 63, 200, 0.16), transparent 16rem),
+    linear-gradient(180deg, #fbf8ff 0%, #ffffff 100%);
+}
+
+.teacher-details .teacher-hero__grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.teacher-details .teacher-hero__visual {
+  position: relative;
+  min-height: 34rem;
+}
+
+.teacher-details .teacher-hero__shape {
+  position: absolute;
+  inset: 1.5rem 1.5rem 2.5rem 0;
+  border-radius: 2rem;
+  background:
+    linear-gradient(135deg, rgba(123, 63, 200, 0.14), rgba(245, 158, 11, 0.16)),
+    var(--color-surface-alt);
+  transform: rotate(-4deg);
+}
+
+.teacher-details .teacher-hero__portrait-wrap {
+  position: relative;
+  z-index: 1;
+  /*height: 100%;*/
+  min-height: 33rem;
+  margin: 0;
+  overflow: hidden;
+  border: 0.55rem solid var(--color-background);
+  border-radius: var(--radius-large);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.teacher-details .teacher-hero__portrait {
+  display: block;
+  width: 100%;
+  /*height: 100%;*/
+  min-height: 33rem;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.teacher-details .teacher-hero__portrait-wrap figcaption {
+  position: absolute;
+  left: var(--space-3);
+  bottom: var(--space-3);
+  z-index: 2;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: var(--color-secondary);
+  color: var(--color-background);
+  font-weight: 900;
+  box-shadow: var(--shadow-soft);
+}
+
+.teacher-details .teacher-hero__badge,
+.teacher-details .teacher-hero__subject {
+  position: absolute;
+  z-index: 3;
+  border: 1px solid rgba(230, 222, 240, 0.88);
+  border-radius: var(--radius-medium);
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--color-heading);
+  box-shadow: var(--shadow-soft);
+}
+
+.teacher-details .teacher-hero__badge--experience {
+  top: 2rem;
+  right: 0;
+  display: grid;
+  gap: 0.15rem;
+  padding: 1rem 1.15rem;
+}
+
+.teacher-details .teacher-hero__badge--experience strong {
+  color: var(--color-primary);
+  font-family: var(--font-family-heading);
+  font-size: 2.3rem;
+  line-height: 1;
+}
+
+.teacher-details .teacher-hero__badge--experience span,
+.teacher-details .teacher-hero__badge--available,
+.teacher-details .teacher-hero__subject {
+  font-size: var(--font-size-small);
+  font-weight: 900;
+}
+
+.teacher-details .teacher-hero__badge--available {
+  right: var(--space-3);
+  bottom: 5.25rem;
+  padding: 0.7rem 0.95rem;
+  color: #11603c;
+}
+
+.teacher-details .teacher-hero__badge--available::before {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.45rem;
+  border-radius: 50%;
+  background: #22c55e;
+  content: "";
+}
+
+.teacher-details .teacher-hero__subject {
+  left: 0;
+  bottom: 8.25rem;
+  padding: 0.7rem 0.95rem;
+  color: var(--color-primary);
+}
+
+.teacher-details .teacher-hero__content {
+  display: grid;
+  align-content: center;
+  gap: var(--space-2);
+}
+
+.teacher-details .teacher-hero h1 {
+  max-width: 13ch;
+  font-size: clamp(2.55rem, 5.4vw, 4.75rem);
+}
+
+.teacher-details .teacher-hero h1 span {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-left: 0.35rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-background);
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.teacher-details .teacher-hero__title {
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 900;
+}
+
+.teacher-details .teacher-hero__tagline {
+  max-width: 46rem;
+  color: var(--color-heading);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-tight);
+}
+
+.teacher-details .teacher-hero__rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--color-secondary);
+  font-weight: 900;
+}
+
+.teacher-details .teacher-hero__rating small {
+  color: var(--color-text);
+}
+
+.teacher-details .teacher-hero__meta,
+.teacher-details .teacher-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.teacher-details .teacher-hero__meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-background);
+  color: var(--color-heading);
+  font-size: var(--font-size-small);
+  font-weight: 850;
+}
+
+.teacher-details .teacher-hero__meta svg,
+.teacher-details .teacher-social svg {
+  width: 2.15rem;
+  height: 2.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+.teacher-details .teacher-hero__trust {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-left: 0.3rem solid var(--color-secondary);
+  border-radius: var(--radius-small);
+  background: rgba(245, 158, 11, 0.08);
+  color: var(--color-heading);
+  font-weight: 900;
+}
+
+.teacher-details .teacher-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+.teacher-details .teacher-social a {
+  display: inline-grid;
+  place-items: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-background);
+  color: var(--color-primary);
+  transition: var(--transition-base);
+}
+
+.teacher-details .teacher-social a:hover,
+.teacher-details .teacher-social a:focus-visible {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-background);
+  text-decoration: none;
+}
+
+@media (min-width: 960px) {
+  .teacher-details .teacher-hero__grid {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .teacher-details .teacher-hero__visual {
+    min-height: auto;
+  }
+
+  .teacher-details .teacher-hero__shape {
+    inset: 1rem;
+  }
+
+  .teacher-details .teacher-hero__portrait-wrap,
+  .teacher-details .teacher-hero__portrait {
+    min-height: 25rem;
+  }
+
+  .teacher-details .teacher-hero__badge,
+  .teacher-details .teacher-hero__subject {
+    position: relative;
+    inset: auto;
+    width: max-content;
+    max-width: 100%;
+    margin-top: var(--space-2);
+  }
+
+  .teacher-details .teacher-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .teacher-details .teacher-hero__actions .button {
+    width: 100%;
+  }
+}

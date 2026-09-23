@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Bachpan Public School</title>
+    <meta name="description" content="Contact Bachpan Public School by phone, email, or through our form.">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__branding" href="index.html">
+          <img class="site-header__logo" src="assets/images/bachpan-logo.png" alt="Bachpan Public School logo" width="160" height="143" decoding="async">
+          <span class="site-header__name">Bachpan Public School</span>
+        </a>
+        <button class="site-header__menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav-menu" data-menu-toggle>
+          <span class="screen-reader-text">Toggle navigation</span>
+          <span class="site-header__menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="primary-navigation" id="site-nav-menu" aria-label="Primary navigation">
+          <ul class="primary-navigation__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="blog.html">News</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <a class="button button--ghost" href="contact.html">Visit Us</a>
+          <a class="button button--primary" href="admissions.html">Apply Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="contact-hero section-spacing" aria-labelledby="contact-hero-heading">
+        <div class="container contact-hero__grid">
+          <div class="contact-hero__content">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span aria-hidden="true">/</span>
+              <span>Contact</span>
+            </nav>
+            <p class="contact-badge">We're Here to Help</p>
+            <h1 id="contact-hero-heading">Get in Touch with Our School</h1>
+            <p>Whether you are planning a visit, exploring admissions, or looking for the right department, our team is ready to help.</p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="admissions.html">Contact Admissions</a>
+              <a class="button button--secondary" href="#campus-visit-heading">Schedule a Campus Visit</a>
+            </div>
+          </div>
+          <div class="contact-hero__visual">
+            <img src="assets/images/gallery-bright-classroom.jpg" alt="Bright Bachpan school reception and classroom area" width="1200" height="800" decoding="async" loading="eager" fetchpriority="high">
+            <div class="contact-floating-card contact-floating-card--top">
+              <strong>Admissions Office</strong>
+              <span>Personal guidance for every family</span>
+            </div>
+            <div class="contact-floating-card contact-floating-card--middle">
+              <strong>Monday-Saturday</strong>
+              <span>8:00am-4:00pm</span>
+            </div>
+            <div class="contact-floating-card contact-floating-card--bottom">
+              <strong>Quick Response</strong>
+              <span>Replies within one school day</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing" aria-labelledby="contact-info-heading">
+        <div class="container">
+          <header class="section-heading text-center">
+            <p class="section-heading__eyebrow">Contact information</p>
+            <h2 id="contact-info-heading" class="section-heading__title">Reach the right team quickly</h2>
+          </header>
+          <div class="contact-info-grid">
+            <article><span>A</span><h3>School Address</h3><p>123 Meadow Lane, Bachpan</p><small>Near Bachpan town centre</small></article>
+            <article><span>P</span><h3>Phone Number</h3><p><a href="tel:+15550142211">(555) 014-2211</a></p><small>Main reception desk</small></article>
+            <article><span>H</span><h3>Admissions Helpline</h3><p><a href="tel:+15550142212">(555) 014-2212</a></p><small>Application and visit support</small></article>
+            <article><span>E</span><h3>Email Address</h3><p><a href="mailto:hello@bachpanschool.org">hello@bachpanschool.org</a></p><small>General enquiries</small></article>
+            <article><span>O</span><h3>Office Hours</h3><p>Mon-Sat, 8:00am-4:00pm</p><small>Closed on public holidays</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing contact-soft-band" aria-labelledby="contact-form-heading">
+        <div class="container contact-form-layout">
+          <section class="contact-form-panel" aria-labelledby="contact-form-heading">
+            <p class="section-heading__eyebrow">Send an inquiry</p>
+            <h2 id="contact-form-heading" class="section-heading__title">Tell us how we can help</h2>
+            <form class="contact-form">
+              <div class="form-grid">
+                <label>Full Name <input type="text" name="full-name" required></label>
+                <label>Parent/Guardian Name <input type="text" name="guardian-name"></label>
+              </div>
+              <div class="form-grid">
+                <label>Email Address <input type="email" name="email" required></label>
+                <label>Phone Number <input type="tel" name="phone" required></label>
+              </div>
+              <div class="form-grid">
+                <label>Student Grade Interested In <input type="text" name="grade" required></label>
+                <label>Subject <input type="text" name="subject" required></label>
+              </div>
+              <label>Message <textarea name="message" rows="6" required></textarea></label>
+              <button class="button button--primary" type="submit">Submit Inquiry</button>
+              <p class="contact-form-note">Your information is used only to respond to your school enquiry. Success message will appear here after submission.</p>
+            </form>
+          </section>
+          <aside class="contact-form-aside">
+            <img src="assets/images/kids-reading-table.jpg" alt="Teacher speaking with students during a classroom visit" width="1200" height="800" decoding="async" loading="lazy">
+            <div>
+              <h3>Prefer speaking with us?</h3>
+              <p>Call the admissions office for class availability, visit slots, and document guidance.</p>
+              <a href="tel:+15550142212">Call admissions</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-spacing" aria-labelledby="directory-heading">
+        <div class="container">
+          <header class="section-heading text-center">
+            <p class="section-heading__eyebrow">Department directory</p>
+            <h2 id="directory-heading" class="section-heading__title">Contact a specific office</h2>
+          </header>
+          <div class="contact-directory-grid">
+            <article><span>01</span><h3>Admissions Office</h3><p>Ms. Clara Evans</p><a href="tel:+15550142212">(555) 014-2212</a><a href="mailto:admissions@bachpanschool.org">admissions@bachpanschool.org</a><small>8:00am-4:00pm</small></article>
+            <article><span>02</span><h3>Principal's Office</h3><p>Mr. Daniel Brooks</p><a href="tel:+15550142213">(555) 014-2213</a><a href="mailto:principal@bachpanschool.org">principal@bachpanschool.org</a><small>By appointment</small></article>
+            <article><span>03</span><h3>Accounts Department</h3><p>Ms. Nisha Rao</p><a href="tel:+15550142214">(555) 014-2214</a><a href="mailto:accounts@bachpanschool.org">accounts@bachpanschool.org</a><small>9:00am-3:00pm</small></article>
+            <article><span>04</span><h3>Student Support</h3><p>Mr. Omar Reed</p><a href="tel:+15550142215">(555) 014-2215</a><a href="mailto:support@bachpanschool.org">support@bachpanschool.org</a><small>School hours</small></article>
+            <article><span>05</span><h3>Transport Office</h3><p>Ms. Lena Park</p><a href="tel:+15550142216">(555) 014-2216</a><a href="mailto:transport@bachpanschool.org">transport@bachpanschool.org</a><small>7:00am-5:00pm</small></article>
+            <article><span>06</span><h3>Reception</h3><p>Front Desk Team</p><a href="tel:+15550142211">(555) 014-2211</a><a href="mailto:hello@bachpanschool.org">hello@bachpanschool.org</a><small>8:00am-4:00pm</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing contact-soft-band" aria-labelledby="location-heading">
+        <div class="container contact-location-grid">
+          <div class="contact-map" role="img" aria-label="Map placeholder showing Bachpan Public School location">
+            <span>Map</span>
+            <strong>Bachpan Public School</strong>
+          </div>
+          <div class="contact-location-card">
+            <p class="section-heading__eyebrow">Campus location</p>
+            <h2 id="location-heading" class="section-heading__title">Visit our campus</h2>
+            <p>123 Meadow Lane, Bachpan. Our school is close to the town centre, public bus routes, and visitor parking.</p>
+            <ul class="check-list">
+              <li>Landmark: Opposite Bachpan Community Park</li>
+              <li>Visitor parking available near reception</li>
+              <li>Bus stop within a five-minute walk</li>
+            </ul>
+            <a class="button button--primary" href="contact.html">Get Directions</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing" aria-labelledby="campus-visit-heading">
+        <div class="container contact-visit-grid">
+          <div class="contact-visit-image">
+            <img src="assets/images/gallery-reading.jpg" alt="Family visiting a Bachpan classroom and reading space" width="1200" height="800" decoding="async" loading="lazy">
+            <span>Guided Tours Available</span>
+          </div>
+          <div>
+            <p class="section-heading__eyebrow">Campus visit</p>
+            <h2 id="campus-visit-heading" class="section-heading__title">Experience the school before you apply</h2>
+            <p>Tour classrooms, meet staff, explore learning spaces, and discuss your child's needs with our admissions counsellor.</p>
+            <ul class="check-list">
+              <li>Classroom and library walkthrough</li>
+              <li>Admissions counselling</li>
+              <li>Tour timings: Monday to Saturday, 9:30am and 2:00pm</li>
+            </ul>
+            <a class="button button--primary" href="admissions.html">Book a Visit</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing" aria-labelledby="faq-heading">
+        <div class="container contact-faq">
+          <header class="section-heading text-center">
+            <p class="section-heading__eyebrow">Frequently asked questions</p>
+            <h2 id="faq-heading" class="section-heading__title">Helpful answers before you call</h2>
+          </header>
+          <div class="contact-accordion">
+            <details open><summary>How can I apply for admission?</summary><p>Start on the admissions page or contact the admissions office. We will guide you through enquiry, visit, documents, and assessment.</p></details>
+            <details><summary>What are the office hours?</summary><p>The main school office is open Monday to Saturday from 8:00am to 4:00pm.</p></details>
+            <details><summary>Can I schedule a campus visit?</summary><p>Yes. Guided tours are available by appointment at 9:30am and 2:00pm on school days.</p></details>
+            <details><summary>How quickly will I receive a response?</summary><p>Most enquiries receive a response within one school day.</p></details>
+            <details><summary>Who should I contact for fee information?</summary><p>Please contact the Accounts Department at accounts@bachpanschool.org or call (555) 014-2214.</p></details>
+            <details><summary>Where is the school located?</summary><p>Bachpan Public School is located at 123 Meadow Lane, near Bachpan Community Park.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-spacing contact-soft-band" aria-labelledby="social-heading">
+        <div class="container contact-social-grid">
+          <div>
+            <p class="section-heading__eyebrow">Social media and community</p>
+            <h2 id="social-heading" class="section-heading__title">Follow school life at Bachpan</h2>
+            <p>See classroom moments, event updates, student achievements, and community announcements.</p>
+            <ul class="contact-social-list" aria-label="School social links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <article class="contact-event-card">
+            <img src="assets/images/gallery-activities.jpg" alt="Students participating in a school community event" width="1200" height="800" decoding="async" loading="lazy">
+            <div>
+              <h3>Latest community highlight</h3>
+              <p>Families joined students for a week of reading, activities, and school celebrations.</p>
+              <a href="blog.html">View news</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-spacing" aria-labelledby="emergency-heading">
+        <div class="container contact-emergency-banner">
+          <div>
+            <p class="section-heading__eyebrow">Emergency contacts</p>
+            <h2 id="emergency-heading" class="section-heading__title">Urgent school support</h2>
+            <p>Use these numbers for time-sensitive campus, student, transport, or medical support.</p>
+          </div>
+          <a href="tel:+15550142211"><span>Reception</span><strong>(555) 014-2211</strong></a>
+          <a href="tel:+15550142217"><span>Security</span><strong>(555) 014-2217</strong></a>
+          <a href="tel:+15550142216"><span>Transport</span><strong>(555) 014-2216</strong></a>
+          <a href="tel:+15550142218"><span>Medical</span><strong>(555) 014-2218</strong></a>
+        </div>
+      </section>
+
+      <section class="section-spacing">
+        <div class="container contact-final-cta">
+          <div>
+            <p class="section-heading__eyebrow">Ready to connect?</p>
+            <h2 class="section-heading__title">Let's Start Your Child's Educational Journey Together</h2>
+            <p>Speak with our team today and discover how Bachpan can support your family.</p>
+          </div>
+          <div class="admissions-callout__actions">
+            <a class="button button--primary" href="admissions.html">Apply for Admission</a>
+            <a class="button button--secondary" href="mailto:admissions@bachpanschool.org">Contact Admissions</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="index.html">
+            <img src="assets/images/bachpan-logo.png" alt="Bachpan Public School logo" width="160" height="143" decoding="async" loading="lazy">
+            <span>Bachpan Public School</span>
+          </a>
+          <ul class="site-footer__contact-list" aria-label="School contact details">
+            <li>
+              <span class="site-footer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s7-6.1 7-12A7 7 0 0 0 5 9c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+              </span>
+              <span>123 Meadow Lane, Bachpan</span>
+            </li>
+            <li>
+              <span class="site-footer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M6.6 10.8a15.8 15.8 0 0 0 6.6 6.6l2.2-2.2a1.4 1.4 0 0 1 1.5-.3 16 16 0 0 0 4 1.1 1.3 1.3 0 0 1 1.1 1.3v3.4a1.3 1.3 0 0 1-1.3 1.3A18.7 18.7 0 0 1 2 3.3 1.3 1.3 0 0 1 3.3 2h3.4A1.3 1.3 0 0 1 8 3.1a16 16 0 0 0 1.1 4 1.4 1.4 0 0 1-.3 1.5l-2.2 2.2Z"/></svg>
+              </span>
+              <a href="tel:+15550142211">(555) 014-2211</a>
+            </li>
+            <li>
+              <span class="site-footer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M3 5h18v14H3z"/><path d="m3 7 9 7 9-7"/></svg>
+              </span>
+              <a href="mailto:hello@bachpanschool.org">hello@bachpanschool.org</a>
+            </li>
+          </ul>
+          <ul class="site-footer__social" aria-label="Social links">
+            <li>
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.6.4-1 1-1Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.7" cy="7.3" r="0.7"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="X">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 5 14 14M19 5 5 19"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <section class="site-footer__newsletter" aria-labelledby="footer-newsletter-heading">
+          <h2 id="footer-newsletter-heading">Join Our Newsletter</h2>
+          <p>Subscribe to be informed about our services and school updates.</p>
+          <form class="site-footer__form" action="#" method="post">
+            <label class="screen-reader-text" for="footer-email">Email address</label>
+            <input id="footer-email" name="email" type="email" placeholder="Your Email Address" required>
+            <button type="submit">Subscribe <span aria-hidden="true">-&gt;</span></button>
+          </form>
+        </section>
+
+        <nav class="site-footer__nav" aria-labelledby="footer-education-heading">
+          <h2 id="footer-education-heading">Educations</h2>
+          <ul class="site-footer__list">
+            <li><a href="academics.html">Education Approach</a></li>
+            <li><a href="academics.html">Training Methodology</a></li>
+            <li><a href="academics.html">Age Groups &amp; Hours</a></li>
+            <li><a href="academics.html">Talent Development</a></li>
+            <li><a href="academics.html">Foreign Language</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__nav" aria-labelledby="footer-quick-heading">
+          <h2 id="footer-quick-heading">Quick Links</h2>
+          <ul class="site-footer__list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Gallery</a></li>
+            <li><a href="academics.html">Classes Timetable</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>&copy; 2026 Bachpan Public School - All Rights Reserved.</p>
+        <a class="site-footer__back-to-top" href="#top" aria-label="Back to top">
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

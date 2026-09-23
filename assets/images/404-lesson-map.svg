@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-labelledby="title desc">
+	<title id="title">Missing page map illustration</title>
+	<desc id="desc">A folded map with a purple location pin and a broken route line.</desc>
+	<path d="M70 210c22 16 96 17 121 0" fill="none" stroke="#231041" stroke-opacity=".16" stroke-width="10" stroke-linecap="round"/>
+	<path d="M72 72l52-24 64 28v118l-64-28-52 24z" fill="#fff7e6" stroke="#7d6b8f" stroke-width="6" stroke-linejoin="round"/>
+	<path d="M124 48v118M188 76l-64 32-52-36" fill="none" stroke="#7b3fc8" stroke-opacity=".24" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M130 41c-38 0-68 30-68 68 0 54 68 111 68 111s68-57 68-111c0-38-30-68-68-68z" fill="#7b3fc8" stroke="#4b2386" stroke-width="7" stroke-linejoin="round"/>
+	<circle cx="130" cy="109" r="33" fill="#f59e0b" stroke="#fff" stroke-width="8"/>
+	<path d="M121 91l22 18-22 18M142 91l-22 18 22 18" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M133 158c-4 15-7 28-19 34-13 6-29-1-42 8" fill="none" stroke="#f59e0b" stroke-width="7" stroke-linecap="round" stroke-dasharray="9 10"/>
+	<path d="M43 78h32M59 62v32M208 101h24M220 89v24M202 188h30M217 173v30" fill="none" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+	<path d="M218 82h22M229 71v22" fill="none" stroke="#7b3fc8" stroke-width="7" stroke-linecap="round"/>
+</svg>

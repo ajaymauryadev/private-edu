@@ -1,0 +1,65 @@
+.container {
+  width: min(100% - 2rem, var(--wide-width));
+  margin-inline: auto;
+}
+
+.section-spacing {
+  padding: var(--space-6) 0;
+}
+
+.page-hero {
+  padding: var(--space-6) 0;
+  background: linear-gradient(135deg, var(--color-surface-alt), var(--color-background));
+}
+
+.page-hero__content {
+  max-width: var(--content-width);
+}
+
+.hero__grid,
+.intro-grid,
+.principal-message__grid,
+.two-column-layout,
+.content-sidebar-layout {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.card-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.stats-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.site-header__inner,
+.announcement-bar__inner,
+.site-footer__grid,
+.site-footer__bottom,
+.site-header__actions,
+.primary-navigation__list,
+.hero__actions,
+.admissions-callout__content {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.site-header__inner,
+.announcement-bar__inner,
+.site-footer__bottom {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer__grid {
+  align-items: start;
+}
+
+.primary-navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
